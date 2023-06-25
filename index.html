@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OnBoarding</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <img src="logo-lar.png" alt="logo net.com" text” width="100" height="50" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="inputForm">
+        <h1>OnBoarding</h1>
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" placeholder="Nome" required /><br />
+
+        <label for="contato">Contato:</label>
+        <input type="tel" id="contato" placeholder="Telefone" /><br />
+
+        <label for="contrato">Contrato:</label>
+        <input
+          type="text"
+          id="contrato"
+          placeholder="Contrato"
+          required
+        /><br />
+
+        <label for="instalador">Instalador:</label>
+        <input type="text" id="instalador" required /><br />
+
+        <label for="vendedor">Vendedor:</label>
+        <input type="text" id="vendedor" required /><br />
+
+        <label for="atendimentoComercial">Gostou do Atend. Comercial?</label>
+        <textarea
+          id="atendimentoComercial"
+          rows="5"
+          cols="33"
+          required
+        ></textarea
+        ><br />
+
+        <label for="atendimentoInstalacao">Gostou do Atend. Instalação?</label>
+        <textarea
+          id="atendimentoInstalacao"
+          rows="5"
+          cols="33"
+          required
+        ></textarea
+        ><br />
+
+        <label>Satisfeito(a):</label>
+        <label class="satisfacao"
+          >Sim
+          <input
+            type="checkbox"
+            name="satisfacao"
+            value="sim"
+            onchange="atualizarValor(this)"
+          />
+          <div class="checkmark"></div>
+        </label>
+
+        <label class="satisfacao-negative"
+          >Nao
+          <input
+            type="checkbox"
+            name="satisfacao"
+            value="nao"
+            onchange="atualizarValor(this)"
+          />
+          <div class="checkmark"></div>
+        </label>
+
+        <label for="nps">NPS:</label>
+        <input type="number" min="0" max="10" id="nps" required /><br />
+
+        <label for="motivoNps">Motivo do NPS:</label>
+        <textarea id="motivoNps" rows="5" cols="33" required></textarea><br />
+
+        <button type="submit"><span>Salvar</span></button>
+        <button type="reset"><span>Limpar</span></button>
+      </form>
+    </div>
+    <footer><a href="">&copy JailsonSantos - 2023</a></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
