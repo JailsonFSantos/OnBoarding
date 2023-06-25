@@ -211,3 +211,16 @@ footer {
   text-align: center;
   line-height: 100px;
 }
+
+a:link,
+a:visited {
+  text-decoration: underline overline;
+  color: #b9e9b3;
+}
+a:hover {
+  text-decoration: underline;
+  color: #50fa7b;
+}
+a:active {
+  text-decoration: underline overline;
+}
