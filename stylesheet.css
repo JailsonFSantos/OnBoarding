@@ -36,7 +36,6 @@ label {
 
 /* checkbox  SIM*/
 
-/* Hide the default checkbox */
 .satisfacao input {
   position: absolute;
   opacity: 0;
@@ -53,7 +52,6 @@ label {
   user-select: none;
 }
 
-/* Create a custom checkbox */
 .checkmark {
   position: relative;
   top: 0;
@@ -65,24 +63,20 @@ label {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 1px rgba(0, 5);
 }
 
-/* When the checkbox is checked, add a blue background */
 .satisfacao input:checked ~ .checkmark {
   background-image: linear-gradient(#b9e9b3, #a8e4a0);
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .satisfacao input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .satisfacao .checkmark:after {
   left: 0.45em;
   top: 0.25em;
