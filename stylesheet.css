@@ -1,11 +1,6 @@
 body {
   background: rgb(207, 46, 46);
-  background: linear-gradient(
-    135deg,
-    rgb(255, 135, 50) 0%,
-    rgb(240, 103, 6) 50%,
-    rgba(207, 46, 46) 100%
-  );
+  background: linear-gradient(135deg, rgb(255, 135, 50) 0%);
 }
 .container {
   display: flex;
